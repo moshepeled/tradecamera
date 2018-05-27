@@ -1,0 +1,49 @@
+.actionBtn {
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+
+.snapshot {
+  text-align: center;
+}
+
+ul {
+  padding-bottom: 20px;
+}
+
+
+.center {
+  margin: auto;
+  text-align: center;
+  border: 1px;
+  border-color: blue;
+  border-style: dotted;
+}
+
+.img {
+  position: relative;
+  left: -1px;
+  top: -1px;
+  border: 1px;
+  border-color: red;
+  border-style: dotted;
+  z-index: 999;
+}
+
+#bottom {
+ position: relative;
+ top: 0;
+ left: 0;
+}
+
+#top {
+ position: absolute;
+ top: 60px;
+ left: 10px;
+}
+
+.area {
+  width: 840px;
+  margin: auto;
+  text-align:center;
+}

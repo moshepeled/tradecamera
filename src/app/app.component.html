@@ -1,0 +1,27 @@
+<div class="snapshot">
+  <h1>
+    טרייד
+  </h1>
+</div>
+<div class="area">
+  <div id="bottom">
+    <div>
+      <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"></webcam>
+    </div>
+    <div id="top">
+      <img src="{{img}}" width="420" height="420" />
+    </div>
+  </div>
+  <div>
+    <button class="actionBtn" (click)="triggerSnapshot();">Take A Snapshot</button>
+  </div>
+</div>
+
+<div class="snapshot" *ngIf="webcamImage">
+  <h2>First!</h2>
+  <img [src]="webcamImage.imageAsDataUrl" />
+</div>
+<div class="snapshot" *ngIf="webcamImage2">
+  <h2>Second!</h2>
+  <img [src]="webcamImage2.imageAsDataUrl" />
+</div>
